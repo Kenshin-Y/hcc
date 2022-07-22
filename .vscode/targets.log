@@ -6,7 +6,7 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Fri Jul 22 21:06:13 2022
+# Make data base, printed on Fri Jul 22 21:14:49 2022
 
 # Variables
 
@@ -155,9 +155,9 @@ MOTD_SHOWN = update-motd
 
 # Directories
 
-# . (device 2, inode 3377699721235288): 8 files, no impossibilities.
+# . (device 2, inode 3377699721235288): 12 files, no impossibilities.
 
-# 8 files, no impossibilities in 1 directories.
+# 12 files, no impossibilities in 1 directories.
 
 # Implicit Rules
 
@@ -186,7 +186,7 @@ all:
 # Not a target:
 Makefile:
 #  Implicit rule search has been done.
-#  Last modified 2022-07-22 21:06:05.0731487
+#  Last modified 2022-07-22 21:11:45.9212621
 #  File has been updated.
 #  Successfully updated.
 
@@ -204,12 +204,20 @@ test: hcc
 #  Modification time never checked.
 #  File has not been updated.
 
+run:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 9):
+	cc -o hcc hcc.c
+	./hcc 123 > tmp.s
+
 clean:
 #  Phony target (prerequisite of .PHONY).
 #  Implicit rule search has not been done.
 #  File does not exist.
 #  File has not been updated.
-#  recipe to execute (from 'Makefile', line 9):
+#  recipe to execute (from 'Makefile', line 13):
 	rm -f hcc *.o *~ tmp*
 
 hcc: hcc.c
@@ -218,20 +226,20 @@ hcc: hcc.c
 #  File has not been updated.
 
 # files hash-table stats:
-# Load=9/1024=1%, Rehash=0, Collisions=0/23=0%
+# Load=10/1024=1%, Rehash=0, Collisions=0/24=0%
 # VPATH Search Paths
 
 # No 'vpath' search paths.
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 1 (0) / strings = 17 / storage = 128 B / avg = 7 B
-# current buf: size = 8162 B / used = 128 B / count = 17 / avg = 7 B
+# strcache buffers: 1 (0) / strings = 21 / storage = 153 B / avg = 7 B
+# current buf: size = 8162 B / used = 153 B / count = 21 / avg = 7 B
 
-# strcache performance: lookups = 29 / hit rate = 41%
+# strcache performance: lookups = 35 / hit rate = 40%
 # hash-table stats:
-# Load=17/8192=0%, Rehash=0, Collisions=1/29=3%
-# Finished Make data base on Fri Jul 22 21:06:13 2022
+# Load=21/8192=0%, Rehash=0, Collisions=1/35=3%
+# Finished Make data base on Fri Jul 22 21:14:49 2022
 
  
 make: *** No rule to make target 'all'.  Stop.

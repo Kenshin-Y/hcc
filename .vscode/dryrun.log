@@ -1,5 +1,5 @@
 make --dry-run --keep-going --print-directory
 make: Entering directory '/home/potate/C_Compiler/hcc'
-cc -std=c11 -g -static    hcc.c   -o hcc
+make: 'hcc' is up to date.
 make: Leaving directory '/home/potate/C_Compiler/hcc'
  

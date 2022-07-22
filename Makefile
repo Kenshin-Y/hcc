@@ -5,6 +5,10 @@ hcc: hcc.c
 test: hcc
 	./test.sh
 
+run:
+	cc -o hcc hcc.c
+	./hcc 123 > tmp.s
+
 clean:
 	rm -f hcc *.o *~ tmp*
 
